@@ -7,6 +7,10 @@ for _, language in ipairs({ "typescript", "javascript" }) do
             cwd = "${workspaceFolder}",
             program = "${file}",
             outputCapture = "std",
+            resolveSourceMapLocations = {
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            },
         },
         {
             name = "NPM - Test",
@@ -18,7 +22,11 @@ for _, language in ipairs({ "typescript", "javascript" }) do
                 "run-script",
                 "test"
             },
-            outputCapture = "std"
+            outputCapture = "std",
+            resolveSourceMapLocations = {
+                "${workspaceFolder}/**",
+                "!**/node_modules/**"
+            },
         }
     }
 end

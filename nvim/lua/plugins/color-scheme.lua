@@ -8,5 +8,5 @@ return {
             -- load the colorscheme here
             vim.cmd([[colorscheme kanagawa-wave]])
         end,
-    }
+    },
 }
