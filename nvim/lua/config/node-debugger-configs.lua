@@ -18,7 +18,6 @@ for _, language in ipairs({ "typescript", "javascript" }) do
                 "run-script",
                 "test"
             },
-            sourceMaps = true,
             outputCapture = "std"
         }
     }

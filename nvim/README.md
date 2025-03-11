@@ -17,13 +17,12 @@ My dotfile configurations for NeoVim.
 | Simple Python Version Management |  https://github.com/pyenv/pyenv | Simplifies Python version management. `pip` can be used to install image to ASCII art conversion tools. |
 
 # Plugins
-> Note - Currently investigating which debugger to use.
-
 This NeoVim dotfile config contains the following modules:
 | Type | Plugin/ Module | Note |
 |------|------|------|
-| Plugin Manager | * `folke/lazy.nvim` | The core NeoVim plugin manager. This plugin manager lazy loads plugins. |
+| Plugin Manager | * `folke/lazy.nvim` * `williamboman/mason.nvim` | The core NeoVim plugin manager. This plugin manager lazy loads plugins. Mason acts as the secondary registry for edge cases such as `js-debug-adapter`. |
 | Language Server Protocol | * `neovim/nvim-lspconfig` | Mechanism for enabling programming language types, semantics, keywords, etc. |
+| Debug Adapter Protocol | * `mfussenegger/nvim-dap` | Mechanism for enabling programming language types, semantics, keywords, etc. |
 | Telescope | * `nvim-telescope/telescope.nvim` | Fast `file`, `directory` and `grep` fuzzy finder. |
 | File Explorer | * `nvim-tree/nvim-tree.lua` | Visual File/ Directory Explorer with toggle capabilities. |
 | Auto-Completion | * `nvim-tree/nvim-tree.lua` | Simple  |
