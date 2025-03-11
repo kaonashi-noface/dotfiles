@@ -16,6 +16,18 @@ My dotfile configurations for NeoVim.
 | Rustup | https://rustup.rs/ | Some NeoVim plugins require rust and rustup to build the plugin (e.g. `saghen/blink.cmp` nightly build) |
 | Simple Python Version Management |  https://github.com/pyenv/pyenv | Simplifies Python version management. `pip` can be used to install image to ASCII art conversion tools. |
 
+# Installation
+Clone this repository, then copy the config files to the user's proper nvim directory.
+
+For example:
+```bash
+cp -R . ~/.config/nvim
+```
+
+> The above command assumes the user is in the nvim directory of the cloned, git repository.
+
+Finally, open nvim - the plugins should automatically install.
+
 # Plugins
 This NeoVim dotfile config contains the following modules:
 | Type | Plugin/ Module | Note |
