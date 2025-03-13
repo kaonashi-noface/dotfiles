@@ -3,6 +3,8 @@ My dotfile configurations for NeoVim.
 
 > I have chosen to not include auto-formatters such as `conform` since most prettifiers have a way to format via command line or `pre-commit` integration.
 
+> There seems to be an issue where space indentation settings are being ignored and indents are being replaced with tab characters (`\t`) on buffer to file write.
+
 # Requirements
 ## Required
 | Name | Link | Note |
