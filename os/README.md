@@ -1,6 +1,5 @@
 # Operating System
-> TODO - add setup scripts for arch-linux & OSX.
->
-> hyprland dotfiles: https://github.com/JaKooLit/Arch-Hyprland
->
-> Add instructions for installing NVM, pyenv, rust, rustup, etc.
+All scripts in this directory are used to auto configure different linux distros. Please read the `README.md` in each subdirectory to understand the order of operation.
+
+# Usage
+Each directory in `os` will correspond to a specific linux distro (e.g. arch, macos, fedora, etc.). Please navigate to the appropriate linux distro.
