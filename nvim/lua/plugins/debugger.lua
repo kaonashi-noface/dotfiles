@@ -35,12 +35,6 @@ return {
 		dap.listeners.before.launch.dapui_config = function()
 			dapui.open()
 		end
-		dap.listeners.before.event_terminated.dapui_config = function()
-			dapui.close()
-		end
-		dap.listeners.before.event_exited.dapui_config = function()
-			dapui.close()
-		end
 
 		-- Setup JavaScript Adapter
 		local dapDebugServerPath = require("mason-registry").get_package("js-debug-adapter"):get_install_path()

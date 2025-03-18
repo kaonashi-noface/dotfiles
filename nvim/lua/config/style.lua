@@ -2,6 +2,11 @@ vim.o.expandtab = true -- Pressing the TAB key will insert spaces instead of a T
 vim.o.shiftwidth = 4 -- Number of spaces inserted instead of a TAB character
 vim.o.softtabstop = 4 -- Number of spaces inserted when indenting
 vim.o.tabstop = 4
+vim.o.textwidth = 0
+vim.o.wrapmargin = 0
+vim.o.wrap = true
+vim.o.linebreak = true -- break by word rather than char
+vim.o.breakindent = true
 
 vim.bo.expandtab = true
 vim.bo.shiftwidth = 4

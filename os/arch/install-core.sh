@@ -16,6 +16,7 @@ pacman -S git \
 
 # Setup Rust
 rustup default stable
+rustup component add rust-analyzer
 
 # Reload Font Cache (e.g. Nerd Fonts)
 fc-cache -f -v
