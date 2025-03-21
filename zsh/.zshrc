@@ -1,12 +1,22 @@
 ########################################
 # PATH CONFIGURATIONS
 ########################################
-# include binaries & packages in PATH
-export PATH="/usr/bin:/usr/share:$PATH"
-
+export XDG_SESSION_TYPE="gnome"
 # Define .config directory
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
+########################################
+# Runtime Environment Configurations
+########################################
+# Setup NVM
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion # This loads nvm bash_completion
+# Setup Go
+export GOPATH=$HOME/go
+
+# include binaries & packages in PATH
+export PATH="/usr/bin:/usr/share:$GOPATH/bin:$PATH"
 
 # Initialize Starship
 eval "$(starship init zsh)"
@@ -59,18 +69,11 @@ alias .4="cd ../../../.."
 alias .5="cd ../../../../.."
 alias mkdir="mkdir -p"
 alias ls="ls --color"
+alias code="code --force-device-scale-factor=1.5"
 
 # Setup zsh utility aliases
 # TODO - zsh update plugins (git clone all repositories in .config/zsh directory)
 # alias zshup=""
-
-########################################
-# Runtime Environment Configurations
-########################################
-# Setup NVM
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-[[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion # This loads nvm bash_completion
 
 # Run neofetch & display pokemon
 pokemon-colorscripts --no-title -r 1,3,6

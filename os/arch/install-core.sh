@@ -7,6 +7,11 @@
 pacman -S git \
     rustup \
     pyenv \
+    go \
+    dotnet-runtime \
+    dotnet-sdk \
+    delve \
+    code \
     neovim \
     wezterm \
     zsh \
