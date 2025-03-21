@@ -23,5 +23,9 @@ pacman -S git \
 rustup default stable
 rustup component add rust-analyzer
 
+# Setup Deno
+curl -fsSL https://dvm.deno.dev | sh
+dvm install
+
 # Reload Font Cache (e.g. Nerd Fonts)
 fc-cache -f -v

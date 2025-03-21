@@ -14,9 +14,11 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [[ -r $NVM_DIR/bash_completion ]] && \. $NVM_DIR/bash_completion # This loads nvm bash_completion
 # Setup Go
 export GOPATH=$HOME/go
+# Setup DVM
+DVM_DIR="$HOME/.dvm"
 
-# include binaries & packages in PATH
-export PATH="/usr/bin:/usr/share:$GOPATH/bin:$PATH"
+# Include binaries & packages in PATH
+export PATH="/usr/bin:/usr/share:$GOPATH/bin:$DVM_DIR/bin:$PATH"
 
 # Initialize Starship
 eval "$(starship init zsh)"
