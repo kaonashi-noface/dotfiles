@@ -5,6 +5,7 @@
 
 # Install core libraries and modules
 pacman -S git \
+    zip \
     rustup \
     pyenv \
     go \
@@ -19,13 +20,16 @@ pacman -S git \
     neofetch \
     ttf-meslo-nerd
 
-# Setup Rust
-rustup default stable
-rustup component add rust-analyzer
+# Setup Java (SDK Man)
+curl -s "https://get.sdkman.io" | bash
 
 # Setup Deno
 curl -fsSL https://dvm.deno.dev | sh
 dvm install
+
+# Setup Rust
+rustup default stable
+rustup component add rust-analyzer
 
 # Reload Font Cache (e.g. Nerd Fonts)
 fc-cache -f -v

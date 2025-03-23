@@ -70,8 +70,9 @@ alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias .5="cd ../../../../.."
 alias mkdir="mkdir -p"
-alias ls="ls --color"
-alias code="code --force-device-scale-factor=1.5"
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias code="code --force-device-scale-factor=1.25"
 
 # Setup zsh utility aliases
 # TODO - zsh update plugins (git clone all repositories in .config/zsh directory)
@@ -80,3 +81,7 @@ alias code="code --force-device-scale-factor=1.5"
 # Run neofetch & display pokemon
 pokemon-colorscripts --no-title -r 1,3,6
 neofetch
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
