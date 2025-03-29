@@ -12,6 +12,10 @@ rm -rf build && mkdir build
 ########################################
 pushd build
 # Install Gnome Extensions
+paru -S extension-manager \
+    gnome-shell-extension-blur-my-shell \
+    gnome-shell-extension-dash-to-dock
+
 declare -A gtk_packages
 gtk_packages["Dracula"]="dracula/gtk/archive/master"
 gtk_packages["Sweet"]="EliverLara/Sweet/archive/master"

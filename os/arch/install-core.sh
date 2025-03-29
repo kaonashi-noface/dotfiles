@@ -13,6 +13,7 @@ pacman -S git \
     dotnet-sdk \
     delve \
     code \
+    cmake \
     neovim \
     wezterm \
     zsh \
