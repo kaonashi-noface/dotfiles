@@ -78,9 +78,8 @@ alias code="code --force-device-scale-factor=1.25"
 # TODO - zsh update plugins (git clone all repositories in .config/zsh directory)
 # alias zshup=""
 
-# Run neofetch & display pokemon
-pokemon-colorscripts --no-title -r 1,3,6
-neofetch
+# Run fastfetch & display pokemon
+fastfetch
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

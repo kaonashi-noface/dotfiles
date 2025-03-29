@@ -24,8 +24,7 @@ makepkg -si
 # AUR PACKAGES
 ########################################
 # Install AUR packages
-paru -S brave-bin \
-    pokemon-colorscripts-git
+paru -S brave-bin
 # Setup Preferred Applications
 xdg-settings set default-web-browser brave-browser.desktop
 ########################################

@@ -18,7 +18,7 @@ pacman -S git \
     wezterm \
     zsh \
     starship \
-    neofetch \
+    fastfetch \
     ttf-meslo-nerd
 
 # Setup Java (SDK Man)
