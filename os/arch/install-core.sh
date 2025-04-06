@@ -13,6 +13,7 @@ pacman -S git \
     dotnet-sdk \
     delve \
     code \
+    intellij-idea-community-edition \
     cmake \
     neovim \
     wezterm \
